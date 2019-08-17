@@ -1,0 +1,7 @@
+
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input name="first" [(ngModel)]="first" required #ctr="ngModel">
+  <input name="last" [(ngModel)]="last" required #ctr2="ngModel">
+  <button>Submit</button>
+</form>
