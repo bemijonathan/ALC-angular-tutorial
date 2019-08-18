@@ -1,0 +1,10 @@
+<div *ngFor="let event of event">
+    <div class="well hoverwell thumbnail col-md-5" style="margin-right: 10px;">
+        <h2>{{event.name}}</h2>
+        <div> Date: {{event.date}}</div>
+        <div> Time: {{event.time}}</div>
+        <div> Price: {{event.price}}</div>
+        <div> Location: {{event.location.address}}</div>
+        <span>{{event.location.city}}, {{event.location.country}} </span>
+    </div>
+</div>
